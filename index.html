@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASIT TEST PORTAL</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+	function validation()
+     {
+      var code = document.getElementById('passcode').value;
+      if(code =="1024")
+      window.open("content.html","_parent");
+      else
+      {
+      	document.getElementById('item').innerHTML="Passcode is Wrong";
+      }  
+    }
+	</script>
+</head>
+<body>
+		<div class="textbox">
+		<input type="text" name="name" id="passcode" placeholder="Enter the Code" required>
+	   </div>
+	   <p id="item"></p>
+		<br>
+		<br>
+		<button id ="btn" type="submit" value="Submit" onclick="validation()">Submit</button>
+
+</body>
+</html>
